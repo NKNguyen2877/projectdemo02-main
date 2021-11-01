@@ -25,17 +25,17 @@
                             @Html.DisplayFor(modelItem => item.CategoryName)
                         </td>
                         <td>
-                            <button type="button" class="btn btn-outline-dark" style="text-decoration:none">
-                                @Html.ActionLink("Edit", "Edit", new { id = item.CategoryId }, new { style = "text-decoration:none;" })
-                            </button>
+                            <a href="@Url.Action("Edit", "Edit")" class="btn btn-outline-primary" style="text-decoration:none">
+                                <i class="fas fa-edit"></i>
+                            </a>
                             &nbsp;&nbsp;
-                            <button type="button" class="btn btn-outline-dark" style="text-decoration:none">
-                                @Html.ActionLink("Details", "Details", new { id = item.CategoryId }, new { style = "text-decoration:none;" })
-                            </button>
+                            <a href="@Url.Action("Details", "Details")" class="btn btn-outline-primary" style="text-decoration:none">
+                                <i class="fas fa-info-circle"></i>
+                            </a>
                             &nbsp;&nbsp;
-                            <button type="button" class="btn btn-outline-dark" style="text-decoration:none">
-                                @Html.ActionLink("Delete", "Delete", new { id = item.CategoryId }, new { style = "text-decoration:none;" })
-                            </button>
+                            <a href="@Url.Action("Delete", "Delete")" class="btn btn-outline-primary" style="text-decoration:none">
+                                <i class="fas fa-trash-alt"></i>
+                            </a>
                         </td>
                     </tr>
 }
