@@ -49,19 +49,17 @@
                             @Html.DisplayFor(modelItem => item.Seller.Name)
                         </td>
                         <td>
-                            <button type="button" class="btn btn-outline-dark" style="text-decoration:none">
-                                @Html.ActionLink("Edit", "Edit", new { id = item.ReportId }, new { style = "text-decoration:none;" })
-                            </button>
-                            <br />
-                            <br />
-                            <button type="button" class="btn btn-outline-dark" style="text-decoration:none">
-                                @Html.ActionLink("Details", "Details", new { id = item.ReportId }, new { style = "text-decoration:none;" })
-                            </button>
-                            <br />
-                            <br />
-                            <button type="button" class="btn btn-outline-dark" style="text-decoration:none">
-                                @Html.ActionLink("Delete", "Delete", new { id = item.ReportId }, new { style = "text-decoration:none;" })
-                            </button>
+                            <a href="@Url.Action("Edit", "Edit")" class="btn btn-outline-primary" style="text-decoration:none">
+                                            <i class="fas fa-edit"></i>
+                                        </a>
+                                        <br />
+                                        <a href="@Url.Action("Details", "Details")" class="btn btn-outline-primary" style="text-decoration:none">
+                                            <i class="fas fa-info-circle"></i>
+                                        </a>
+                                        <br />
+                                        <a href="@Url.Action("Delete", "Delete")" class="btn btn-outline-primary" style="text-decoration:none">
+                                            <i class="fas fa-trash-alt"></i>
+                                        </a>
                         </td>
                     </tr>
 }
